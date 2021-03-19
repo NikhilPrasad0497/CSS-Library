@@ -7,20 +7,26 @@
     display: flex;
     align-items: center; 
     justify-content: space-between; 
-    padding: 1rem;
+    padding: 0 1rem 1rem 1rem;
 }
 
 .main-nav-2{
     padding-right: 2rem;
+    width: 50%;
 }
 
 .main-nav-2 > a{
-    padding: 2rem;
+    margin: 1rem 2rem 0rem 6rem;
+}
+
+.main-nav-2 > input{
+    width: 85%;
+    padding: 0.5rem;
 }
 
 .sidebar{
     position: fixed;
-    width: 20%;
+    min-width: 20%;
     overflow: scroll;
     height: 100vh;
     overflow-x: hidden;
