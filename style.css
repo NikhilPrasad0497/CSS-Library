@@ -126,7 +126,7 @@
         height: 0.5rem;
         width: 2rem;
         position: relative;
-        z-index: 1;
+        z-index: 2;
         cursor: pointer;
     }
     
@@ -157,9 +157,22 @@
         background: black;
     }
 
-    .hamburger.open span{
+    .hamburger.open{
+        transform: rotate(720deg);
+    }
+
+    .hamburger.open span:nth-child(1){
         background: white;
-        z-index: 999;
+        transform: rotate(45deg) translate(5px,8px);
+    }
+
+    .hamburger.open span:nth-child(2){
+        background: transparent;
+    }
+
+    .hamburger.open span:nth-child(3){
+        background: white;
+        transform: rotate(-45deg) translate(-1px,-2px);
     }
     
     
@@ -178,7 +191,7 @@
         transition: transform 0.2s;
         /* list-style: none; */
         padding-top: 4rem;
-        z-index: 998;
+        z-index: 1;
     }
 
     .open{
@@ -193,8 +206,11 @@
 
     .main{
         position: static;
-        margin: 0.4rem;
+        /* margin: 0.4rem; */
         width: 100vw;
+    }
+    .content{
+        padding: 1rem;
     }
 }
 /* Points:
