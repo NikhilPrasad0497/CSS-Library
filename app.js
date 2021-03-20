@@ -1,12 +1,14 @@
-var hamburger = document.querySelector('.hamburger')
-var sidebar = document.querySelector('.sidebar')
+var ham = document.querySelector('.hamburger')
+var side = document.querySelector('.sidebar')
 
-hamburger.addEventListener("click", ()=>toggleMenu())
+ham.addEventListener("click", ()=>toggleMenu())
 
 const toggleMenu = ()=>{
-    if(sidebar.classList.contains('.show-sidebar')){
-        sidebar.classList.remove('.show-sidebar')
+    if(side.classList.contains('open')){
+        side.classList.remove('open')
+        ham.classList.remove('open')
     }else{
-        sidebar.classList.add('.show-sidebar')
+        side.classList.add('open')
+        ham.classList.add('open')
     }
 }
