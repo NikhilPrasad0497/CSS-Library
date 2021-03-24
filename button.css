@@ -1,0 +1,65 @@
+*{
+    --button-primary-font-color: white; 
+    --button-primary-back-color: rgb(2, 61, 61);
+    --button-secondary-back-color: darkgrey;
+    --button-success-back-color: green;
+    --button-failure-back-color: red;
+    --button-icon-color: rgb(0, 99, 246);
+}
+.btn{
+    padding: 0.5rem;
+    cursor: pointer;
+    border-radius: 0.5rem;
+    color: var(--button-primary-font-color);
+}
+
+.btn-filled-primary{
+    background: var(--button-primary-back-color) ;
+    border: 0.5px solid var(--button-primary-back-color);
+}
+
+.btn-filled-secondary{
+    background: var(--button-secondary-back-color);
+    border: 0.5px solid var(--button-secondary-back-color);
+}
+
+.btn-filled-success{
+    background: var(--button-success-back-color);
+    border: 0.5px solid var(--button-success-back-color);
+}
+
+.btn-filled-failure{
+    background: var(--button-failure-back-color);
+    border: 0.5px solid var(--button-failure-back-color);
+}
+
+.btn-outline-primary{
+    color: var(--button-primary-back-color);
+    border: 0.5px solid var(--button-primary-back-color);
+}
+
+.btn-outline-secondary{
+    color: var(--button-secondary-back-color);
+    border: 0.5px solid var(--button-secondary-back-color);
+}
+
+.btn-outline-success{
+    color: var(--button-success-back-color);
+    border: 0.5px solid var(--button-success-back-color);
+}
+
+.btn-outline-failure{
+    color: var(--button-failure-back-color);
+    border: 0.5px solid var(--button-failure-back-color);
+}
+
+.btn-icon{
+    background: transparent;
+    color: var(--button-icon-color);
+    border: none;
+}
+
+.btn-padding{
+    padding: 0rem 1rem;
+    border: 0.5px solid var(--button-icon-color) ;
+}
